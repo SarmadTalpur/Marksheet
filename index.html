@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body style="margin: 0px;">
+        <div style="width: 100%; height: 150px; display: flex; background-color: white; opacity: 0.8;">
+            <div style="width: 50%; display: flex; align-items: center;">
+                <img src="logo3.bmp" style="display: flex; width: 43%; height: 70px; padding-left: 50px;">
+            </div>
+            <div style="width: 10%; display: flex; align-items: center; justify-content: center; margin-left: 10px; margin-right: 5px;">
+                <a style="padding: 10px; color: white; background-color: blue; opacity: 0.4; font-size: 18px;">HOME</a>
+            </div>
+            <div style="width: 10%; display: flex; align-items: center; justify-content: center; margin-left: 10px; margin-right: 15px;">
+                <a class="navbar">ADMISSIONS</a>
+            </div>
+            <div style="width: 10%; display: flex; align-items: center; justify-content: center; margin-left: 10px; margin-right: 5px;">
+                <a class="navbar">MISSION</a>
+            </div>
+            <div style="width: 10%; display: flex; align-items: center; justify-content: center; margin-left: 10px; margin-right: 5px;">
+                <a class="navbar">CONTACT</a>
+            </div>
+        </div>
+        <div id="sign">
+            <img style="width: 100%; height: 100%; display: flex;" src="sbg.jpg">
+            <div style="width: 95%; height: 95%; background-color: rgb(48, 119, 185); position: absolute;
+            opacity: 0.8; display: flex; flex-direction: column; align-items: center;">
+                <h1 style="display: flex; color: white; padding: 10px;">SIGN IN</h1>
+                <input id="name" type="text" placeholder="Candidate Name" size="45" style="height: 25px; padding:5px">
+                <p id="failname"></p>
+                <input id="fathername" type="text" placeholder="Father's Name" size="45" style="height: 25px; padding:5px">
+                <p id="failfathername"></p>
+                <input id="rollno" type="text" placeholder="Candidate Seat No." size="45" style="height: 25px; padding:5px">
+                <p id="failrollno"></p>
+                <input id="sem" type="number" placeholder="Semester" size="60" style="height: 25px; padding:5px">
+                <p id="failsem"></p>
+                <button id="gm">GENERATE MARKSHEET</button>
+            </div>
+        </div>
+        <div id="input">
+            <img style="width: 100%; height: 100%; display: flex;" src="bgin.jpg">
+            <div style="width: 95%; height: 95%; background-color: rgb(48, 119, 185); position: absolute; opacity: 0.8;
+            display: flex; flex-direction: column; align-items: center;">
+                <h1 style="display: flex; color: white; padding: 10px;">SCORE DATA</h1>
+                <label id="subject1" style="display: flex; margin: 3px;">Subject 1</label>
+                <input id="sub1" type="number" placeholder="Enter Obtained Marks" style="height: 25px; padding:5px;">
+                <p id="failsub1"></p>
+                <label id="subject2" style="display: flex; margin: 3px;">Subject 2</label>
+                <input id="sub2" type="number" placeholder="Enter Obtained Marks" style="height: 25px; padding:5px">
+                <p id="failsub2"></p>
+                <label id="subject3" style="display: flex; margin: 3px;">Subject 3</label>
+                <input id="sub3" type="number" placeholder="Enter Obtained Marks" style="height: 25px; padding:5px">
+                <p id="failsub3"></p>
+                <label id="subject4" style="display: flex; margin: 3px;">Subject 4</label>
+                <input id="sub4" type="number" placeholder="Enter Obtained Marks" style="height: 25px; padding:5px">
+                <p id="failsub4"></p>
+                <label id="subject5" style="display: flex; margin: 3px;">Subject 5</label>
+                <input id="sub5" type="number" placeholder="Enter Obtained Marks" style="height: 25px; padding:5px">
+                <p id="failsub5"></p>
+                <button id="done">SUBMIT</button>
+            </div>
+        </div>
+        <div id="marksheet">
+            <img style="width: 100%; height: 100%; display: flex;" src="bgfm.jpg">
+            <div style="width: 95%; height: 95%; opacity: 0.8; background-color: gray; display: flex; position: absolute;
+            align-items: center; flex-direction: column;">
+                <h1 style="margin-top: 50px;">MARKSHEET</h1>
+                <br>
+                <h3 id="candidate">Candidate Name: </h3>
+                <h3 id="father">Father's Name: </h3>
+                <h3 id="seat">Seat No: </h3>
+                <h3 id="semester">Semester: </h3>
+                <h3 id="percentage">Percentage: </h3>
+                <h3 id="grade">Grade: </h3>
+                <br>
+                <div style="width: 90%; height: 50px; background-color: orangered; display: flex; align-items: center;
+                justify-content: center; margin-bottom: 3px;">
+                    <h4 style="width: 40%; padding: 5px;">SUBJECT</h4>
+                    <h4 style="width: 25%; padding: 5px;">TOTAL MARKS</h4>
+                    <h4 style="width: 25%; padding: 5px;">OBTAINED MARKS</h4>
+                </div>
+                <div style="width: 90%; height: 50px; background-color: rgb(175, 51, 175); display: flex; align-items: center;
+                justify-content: center; margin-bottom: 3px;">
+                    <h4 id="sub1d" style="width: 40%; padding: 5px;">SUBJECT 1</h4>
+                    <h4 style="width: 25%; padding: 5px;">100</h4>
+                    <h4 id="ob1" style="width: 25%; padding: 5px;">-</h4>
+                </div>
+                <div style="width: 90%; height: 50px; background-color: rgb(175, 51, 175); display: flex; align-items: center;
+                justify-content: center; margin-bottom: 3px;">
+                    <h4 id="sub2d" style="width: 40%; padding: 5px;">SUBJECT 2</h4>
+                    <h4 style="width: 25%; padding: 5px;">100</h4>
+                    <h4 id="ob2" style="width: 25%; padding: 5px;">-</h4>
+                </div>
+                <div style="width: 90%; height: 50px; background-color: rgb(175, 51, 175); display: flex; align-items: center; justify-content: center; 
+                margin-bottom: 3px;">
+                    <h4 id="sub3d" style="width: 40%; padding: 5px;">SUBJECT 3</h4>
+                    <h4 style="width: 25%; padding: 5px;">100</h4>
+                    <h4 id="ob3" style="width: 25%; padding: 5px;">-</h4>
+                </div>
+                <div style="width: 90%; height: 50px; background-color: rgb(175, 51, 175); display: flex; align-items: center;
+                justify-content: center; margin-bottom: 3px;">
+                    <h4 id="sub4d" style="width: 40%; padding: 5px;">SUBJECT 4</h4>
+                    <h4 style="width: 25%; padding: 5px;">100</h4>
+                    <h4 id="ob4" style="width: 25%; padding: 5px;">-</h4>
+                </div>
+                <div style="width: 90%; height: 50px; background-color: rgb(175, 51, 175); display: flex; align-items: center;
+                justify-content: center; margin-bottom: 3px;">
+                    <h4 id="sub5d" style="width: 40%; padding: 5px;">SUBJECT 5</h4>
+                    <h4 style="width: 25%; padding: 5px;">100</h4>
+                    <h4 id="ob5" style="width: 25%; padding: 5px;">-</h4>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

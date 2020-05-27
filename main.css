@@ -1,0 +1,67 @@
+@media (min-width:800px) {
+    body{
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+} 
+#sign{
+    width: 30%; height: 530px; position: absolute; display: flex; top: 180px;
+    left: 90px; justify-content: center; align-items: center;
+}
+#input{
+    width: 30%; height: 750px; position: absolute; display: flex; top: 180px;
+    left: 790px; justify-content: center; align-items: center; margin-bottom: 10px;
+}
+#marksheet{
+    width: 87%; height: 900px; position: absolute; display: flex; top: 1000px;
+    left: 90px; justify-content: center; align-items: center; background-color: palevioletred; margin-bottom: 30px;
+}}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 1024px) {
+    body{
+        background-image: url(bgp.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+}
+#sign{
+    width: 50%; height: 530px; position: absolute; display: flex; top: 180px;
+    left: 240px; justify-content: center; align-items: center;
+}
+#input{
+    width: 50%; height: 750px; position: absolute; display: flex; top: 780px;
+    left: 240px; justify-content: center; align-items: center; margin-bottom: 10px;
+}
+#marksheet{
+    width: 92%; height: 900px; position: absolute; display: flex; top: 1650px;
+    left: 40px; justify-content: center; align-items: center; background-color: palevioletred; margin-bottom: 60px;
+}}
+
+a.navbar{
+    padding: 10px; color: gray; font-size: 15px; background-color: white; text-decoration: underline;
+}
+a.navbar:hover{
+    background-color: black;
+    color:white;
+    opacity: 0.7;
+}
+#gm{
+    padding: 18px 35px; border: none; border-radius: 35px; background-color: rgb(255, 136, 0); color: white; margin-bottom: 10px;
+}
+#gm:hover{
+    background-color: rgb(255, 94, 0);
+}
+#done{
+    padding: 18px 35px; border: none; border-radius: 35px; background-color: white; color: white; margin-bottom: 10px; color: black;
+}
+#done:hover{
+    background-color: rgb(143, 23, 143); color: white;
+}
